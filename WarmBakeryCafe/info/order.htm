@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title>Warm Bakery Cafe</title>
+        <h1>คาเฟ่เบเกอรี่แสนอบอุ่น (Warm Bakery Cafe)</h1>
+        <ul>
+            <li><a href="../index.html">หน้าแรก (Home)</a></li>
+            <li><a href="menu.htm">เมนูเบอเกอรี่ (Menu)</a></li>
+            <li><a href="aboutus.htm">เกี่ยวกับเรา (About us)</a></li>
+            <li><a href="order.htm">ติดต่อและจองโต๊ะ (Contact & Booking)</a></li>
+        </ul>
+        <hr>
+    </head>
+<body>
+    <h1>แบบฟอร์มสั่งอาหาร (Order Form)</h1>
+    <form>
+
+        <fieldset>
+            <legend>เลือกรายการอาหาร</legend>
+
+            <article>
+                <input type="checkbox" id="croissant" name="croissant" value="croissant">
+                <label for="croissant">ครัวซอง (croissant)</label>
+                85 บาท
+                <br>
+                <label for="croissant_qty">จำนวน:</label>
+                <input type="number" id="croissant_qty" name="croissant_qty" min="1" value="1">
+                <label for="croissant_note">คำสั่งพิเศษ:</label>
+                <input type="text" id="croissant_note" name="croissant_note" placeholder="เช่น อุ่นก่อนเสิร์ฟ">
+            </article>
+            <br>
+
+            <article>
+                <input type="checkbox" id="truffle" name="truffle" value="truffle">
+                <label for="truffle">ทรัฟเฟิล (truffle)</label>
+                120 บาท
+                <br>
+                <label for="truffle_qty">จำนวน:</label>
+                <input type="number" id="truffle_qty" name="truffle_qty" min="1" value="1">
+                <label for="truffle_note">คำสั่งพิเศษ:</label>
+                <input type="text" id="truffle_note" name="truffle_note" placeholder="เช่น ไม่หวานมาก">
+            </article>
+            <br>
+
+            <article>
+                <input type="checkbox" id="chocolate_cake" name="chocolate_cake" value="chocolate_cake">
+                <label for="chocolate_cake">ชอคโกแลตเค้ก (chocolate cake)</label>
+                400 บาท
+                <br>
+                <label for="chocolate_cake_qty">จำนวน:</label>
+                <input type="number" id="chocolate_cake_qty" name="chocolate_cake_qty" min="1" value="1">
+                <label for="chocolate_cake_note">คำสั่งพิเศษ:</label>
+                <input type="text" id="chocolate_cake_note" name="chocolate_cake_note" placeholder="เช่น เขียนหน้าเค้ก">
+            </article>
+            <br>
+
+            <article>
+                <input type="checkbox" id="thai_tea" name="thai_tea" value="thai_tea">
+                <label for="thai_tea">ชาไทย (Thai tea)</label>
+                30 บาท
+                <br>
+                <label for="thai_tea_qty">จำนวน:</label>
+                <input type="number" id="thai_tea_qty" name="thai_tea_qty" min="1" value="1">
+                <label for="thai_tea_note">คำสั่งพิเศษ:</label>
+                <input type="text" id="thai_tea_note" name="thai_tea_note" placeholder="เช่น หวานน้อย">
+            </article>
+            <br>
+
+            <article>
+                <input type="checkbox" id="coffee" name="coffee" value="coffee">
+                <label for="coffee">กาแฟ (Coffee)</label>
+                45 บาท
+                <br>
+                <label for="coffee_qty">จำนวน:</label>
+                <input type="number" id="coffee_qty" name="coffee_qty" min="1" value="1">
+                <label for="coffee_note">คำสั่งพิเศษ:</label>
+                <input type="text" id="coffee_note" name="coffee_note" placeholder="เช่น ร้อน / เย็น">
+            </article>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>ข้อมูลผู้รับและการจัดส่ง</legend>
+
+            <label for="fullname">ชื่อ - นามสกุล:</label>
+            <br>
+            <input type="text" id="fullname" name="fullname" placeholder="ชื่อ-นามสกุลของคุณ" required>
+            <br><br>
+
+            <label for="phone">เบอร์โทรศัพท์:</label>
+            <br>
+            <input type="tel" id="phone" name="phone" placeholder="08XXXXXXXX" required>
+            <br><br>
+
+            <label for="address">ที่อยู่จัดส่ง:</label>
+            <br>
+            <textarea id="address" name="address" rows="3" cols="40" placeholder="บ้านเลขที่ ซอย ถนน ตำบล อำเภอ"></textarea>
+            <br><br>
+
+            <label for="delivery_date">วันที่จัดส่ง:</label>
+            <input type="date" id="delivery_date" name="delivery_date">
+            <br><br>
+
+            <label for="delivery_time">เวลาจัดส่ง:</label>
+            <input type="time" id="delivery_time" name="delivery_time">
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="ยืนยันการสั่งซื้อ">
+        
+    </form>
+</body>
+</html>
