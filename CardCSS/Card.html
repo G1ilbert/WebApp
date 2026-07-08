@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card CSS</title>
+    <style>
+       * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+       }
+
+       .card { 
+            width: 350px;
+            background-color: white;
+            text-align: center;
+            margin: 50px auto; 
+            box-shadow: 0px 0px 12px 1px rgb(189, 189, 189);
+        }
+
+       .card img {  
+            width: 100%;
+            display: block;
+       }
+
+       .card .title { 
+            color:gray;
+            margin: 25px;
+       }
+
+       .card .contact {
+            background-color: black;
+            color: white;
+            padding: 15px;
+       }
+
+       .profile {
+            width: 350px;
+            background-color: #9C27B0;
+            text-align: center;
+            margin: 50px auto; 
+            border-radius: 24px;
+            color: white;
+            padding: 30px 20px;
+       }
+       .profile img {
+            width: 240px; 
+            height: 240px;
+            border-radius: 50%;
+            border: 5px solid white;
+            
+       }
+       .profile .title { 
+            margin: 20px 0;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 20px;
+       }
+
+       .profile .message {
+            background-color: white;
+            color: black;
+            padding: 12px;
+            border-radius: 8px;
+       }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="img/ceo_harvard.jpg" alt="pic_harvardCEO">
+        <h1>John Doe</h1>
+        <p class="title">CEO & Founder, Example</p>
+        <p>Harvard University</p>
+        <p class="contact">Contact</p>
+    </div>
+
+    <div class="profile">
+        <img src="img/ceo_harvard.jpg" alt="profile">
+        <h1>Andrew Neil</h1>
+        <p>Surkhet, Nephal</p>
+        <p class="title">User interface Designer and front-end developer</p>
+        
+        <p class="message">Message</p>
+    </div>
+
+</body>
+</html>
